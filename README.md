@@ -17,5 +17,5 @@
 pip3 install -r requirements.txt --break-system-packages
 
 # запуск приложения
-python3 main.py
+gunicorn main:app --bind 0.0.0.0:8000 --timeout 60
 ```
